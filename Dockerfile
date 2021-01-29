@@ -10,12 +10,9 @@ RUN apt-get update &&  \
 	php7.4-intl \
 	php7.4-mysql \
 	php7.4-gd \
-	php7.4-xdebug \
-	php-pear \
-	php7.4-dev \
-	make
+	php7.4-xdebug
 
-RUN pecl channel-update pecl.php.net && pecl install xdebug-2.9.8
+RUN export XDEBUG_MODE=coverage
 
 RUN apt-get clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
