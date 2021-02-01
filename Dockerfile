@@ -12,7 +12,7 @@ RUN apt-get update &&  \
 	php7.4-gd \
 	php7.4-xdebug
 
-RUN export XDEBUG_MODE=coverage
+ENV XDEBUG_MODE coverage
 
 RUN apt-get clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
