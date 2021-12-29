@@ -1,4 +1,4 @@
-FROM phpdockerio/php80-fpm
+FROM phpdockerio/php:8.1-fpm
 
 LABEL maintainer="Thomas Combe"
 
@@ -7,10 +7,11 @@ RUN apt-get update &&  \
 	libmagickwand-dev \
 	ghostscript \
 	git \
-	php8.0-intl \
-	php8.0-mysql \
-	php8.0-gd \
-	php8.0-xdebug
+	ssh-client \
+	php8.1-intl \
+	php8.1-mysql \
+	php8.1-gd \
+	php8.1-xdebug
 
 ENV XDEBUG_MODE coverage
 
