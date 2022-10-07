@@ -11,6 +11,7 @@ RUN apt-get update &&  \
 	php8.1-intl \
 	php8.1-mysql \
 	php8.1-gd \
+	php8.1-redis \
 	php8.1-xdebug
 
 ENV XDEBUG_MODE coverage
