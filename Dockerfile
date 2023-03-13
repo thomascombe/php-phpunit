@@ -1,4 +1,4 @@
-FROM phpdockerio/php:8.1-fpm
+FROM phpdockerio/php:8.2-fpm
 
 LABEL maintainer="Thomas Combe"
 
@@ -8,12 +8,13 @@ RUN apt-get update &&  \
 	ghostscript \
 	git \
 	ssh-client \
-	php8.1-intl \
-	php8.1-mysql \
-	php8.1-gd \
-	php8.1-redis \
-	php8.1-xdebug \
-	php8.1-soap
+	php8.2-intl \
+	php8.2-mysql \
+	php8.2-gd \
+	php8.2-redis \
+	php8.2-xdebug \
+	php8.2-bcmath \
+	php8.2-soap
 
 ENV XDEBUG_MODE coverage
 
