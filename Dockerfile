@@ -7,6 +7,7 @@ RUN apt-get update &&  \
 	libmagickwand-dev \
 	ghostscript \
 	git \
+    mysql-client \
 	ssh-client \
 	php8.3-intl \
 	php8.3-mysql \
