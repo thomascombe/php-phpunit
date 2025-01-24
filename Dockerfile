@@ -1,4 +1,4 @@
-FROM phpdockerio/php:8.3-fpm
+FROM phpdockerio/php:8.4-fpm
 
 LABEL maintainer="Thomas Combe"
 
@@ -9,13 +9,13 @@ RUN apt-get update &&  \
 	git \
     mysql-client \
 	ssh-client \
-	php8.3-intl \
-	php8.3-mysql \
-	php8.3-gd \
-	php8.3-redis \
-	php8.3-xdebug \
-	php8.3-bcmath \
-	php8.3-soap
+	php8.4-intl \
+	php8.4-mysql \
+	php8.4-gd \
+	php8.4-redis \
+	php8.4-xdebug \
+	php8.4-bcmath \
+	php8.4-soap
 
 ENV XDEBUG_MODE coverage
 
