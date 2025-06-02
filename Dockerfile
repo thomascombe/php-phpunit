@@ -15,9 +15,13 @@ RUN apt-get update &&  \
 	php8.4-redis \
 	php8.4-xdebug \
 	php8.4-bcmath \
-	php8.4-soap
+	php8.4-soap \
+    # Memcached
+    build-essential \
+    libmemcached-dev \
+	php8.4-memcached
 
-ENV XDEBUG_MODE coverage
+ENV XDEBUG_MODE=coverage
 
 RUN apt-get clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
